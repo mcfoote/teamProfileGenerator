@@ -31,5 +31,5 @@ class Engineer extends Employee {
 }
 
 class Intern extends Employee {
-    
+
 }
