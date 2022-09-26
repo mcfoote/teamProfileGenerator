@@ -15,5 +15,5 @@ test('getGithub returns github member', () => {
 test('getRole returns Engineer string', () => {
     let testVal = 'Engineer';
     let testEngineer = new Engineer('test', 1234, 'testemail@gmail.com', 'testgitname');
-    expect(testEngineer.getRole).toBe(testVal);
+    expect(testEngineer.getRole()).toBe(testVal);
 });
