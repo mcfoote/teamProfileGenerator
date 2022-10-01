@@ -1,6 +1,6 @@
 
 const generateTeam = team => {
-
+    //card template for Manager
     const generateManager = manager => {
         return `
 <div class="card employee-card">
@@ -22,6 +22,7 @@ const generateTeam = team => {
         `;
     };
 
+    //card template for Engineer
     const generateEngineer = engineer => {
         return `
 <div class="card employee-card">
@@ -43,6 +44,7 @@ const generateTeam = team => {
         `;
     };
 
+    //card template for Intern
     const generateIntern = intern => {
         return `
 <div class="card employee-card">
@@ -84,7 +86,7 @@ const generateTeam = team => {
     return html.join("");
 
 }
-
+//exporter
 module.exports = team => {
 
     return `

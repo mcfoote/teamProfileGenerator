@@ -1,3 +1,4 @@
+//local variables
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
@@ -10,6 +11,7 @@ generateTeam = require('./src/templateHelper.js');
 const outputDir = path.resolve(__dirname, 'dist');
 const outputPath = path.join(outputDir, 'team.html');
 
+//array to take teammate inputs
 teamArr = [];
 
 function main() {
@@ -46,14 +48,14 @@ function main() {
         })
     }
 
-
+  //build function
   function buildHTML() {
     console.log('Team generated.')
 
       fs.writeFileSync(outputPath, generateTeam(teamArr), 'UTF-8')
 
   }
-
+  //questions for manager class
   function addManager() {
     inquirer.prompt ([
       
@@ -89,6 +91,7 @@ function main() {
 
   }
 
+  //questions for Engineer class
   function addEngineer() {
     inquirer.prompt([
       
@@ -124,6 +127,7 @@ function main() {
 
   }
 
+  //questions for Intern class
   function addIntern() {
     inquirer.prompt([
       
@@ -159,8 +163,10 @@ function main() {
 
   }
 
+  //call to build
   buildTeam();
 
 }
 
+//call to main
 main();
