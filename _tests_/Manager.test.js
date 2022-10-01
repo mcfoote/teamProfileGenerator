@@ -14,6 +14,6 @@ test('getOfficeNumber returns officeNumber member', () => {
 
 test('getRole returns Manager', () => {
     let testVal = 'Manager';
-    let testManager = new Engineer('test', 1234, 'testemail@gmail.com', 'testgitname');
+    let testManager = new Manager('test', 1234, 'testemail@gmail.com', 'testgitname');
     expect(testManager.getRole()).toBe(testVal);
 });

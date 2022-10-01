@@ -7,7 +7,7 @@ const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
 
 generateTeam = require('./src/templateHelper.js');
-const outputDir = path.resolve(__dirname, 'output');
+const outputDir = path.resolve(__dirname, 'dist');
 const outputPath = path.join(outputDir, 'team.html');
 
 teamArr = [];
